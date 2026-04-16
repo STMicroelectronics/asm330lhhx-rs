@@ -5,6 +5,7 @@ use super::{
 
 use core::fmt::Debug;
 use core::marker::PhantomData;
+
 use half::f16;
 
 /// The Asm330lhhx generic driver struct.
@@ -163,8 +164,10 @@ where
 
 #[bisync]
 const PAGE_WRITE_ENABLE: u8 = 0x02;
+
 #[bisync]
 const PAGE_READ_ENABLE: u8 = 0x01;
+
 #[bisync]
 const PAGE_RW_DISABLE: u8 = 0x00;
 
